@@ -86,15 +86,20 @@ body {
 }
 .h-right {
     stroke-dasharray: 80;
-    stroke-dashoffset: -80;
-    animation: path 0.4s ease 1.3s forwards;    
+    stroke-dashoffset: 80;
+    animation: m1-right 0.4s ease 1.3s forwards;    
 }
 
 /* M1 */
 .m1-bottom {
     stroke-dasharray: 70;
-    stroke-dashoffset: -70;
-    animation: path 0.4s ease 0.9s forwards;
+    stroke-dashoffset: 70;
+    animation: m1-bottom 0.4s ease 0.9s forwards;
+}
+@keyframes m1-bottom {
+    100% {
+        stroke-dashoffset: 140;
+    }
 }
 .m1-left {
     stroke-dasharray: 80;
@@ -103,6 +108,11 @@ body {
 }
 .m1-right {
     stroke-dasharray: 80;
-    stroke-dashoffset: -80;
-    animation: path 0.4s ease 0.5s forwards;
+    stroke-dashoffset: 80;
+    animation: m1-right 0.4s ease 0.5s forwards;
+}
+@keyframes m1-right {
+    100% {
+        stroke-dashoffset: 160;
+    }
 }
