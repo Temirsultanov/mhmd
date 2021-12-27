@@ -18,7 +18,7 @@ body {
     transform: scale(0.5);
 }
 .start path {
-    transition: 0.1s ease 1.2s;
+    transition: 0.1s ease 1.3s;
     stroke: #e1c861;
 }
 @keyframes pathcolor {
