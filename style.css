@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.mhmd path{
+    stroke: white;
+}
+.mhmd {
+    transform: scale(0.5);
+}
+.start path {
+    transition: 0.1s ease 1.2s;
+    stroke: #e1c861;
+}
+@keyframes pathcolor {
+    0% {
+        stroke: white;
+    }
+    100% {
+        stroke: #e1c861;
+    }
+}
+
+
+@keyframes path {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* Bottom line */
+.bottom {
+    stroke-dasharray: 330;
+    stroke-dashoffset: 330;
+    animation: path 0.4s ease 1.3s forwards;
+}
+
+/* D */
+.d-bottom {
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: path 0.4s ease 0.9s forwards;
+}
+.d-right {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: path 0.4s ease 0.5s forwards;
+}
+
+
+/* M2 */
+.m2-bottom {
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: path 0.4s ease 0.5s forwards;
+}
+.m2-left {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: path 0.4s ease 0.9s forwards;
+}
+.m2-right {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: path 0.4s ease 1.3s forwards;    
+}
+
+/* H */
+.h-bottom {
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: path 0.4s ease 0.9s forwards;
+}
+.h-left {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: path 0.4s ease 0.5s forwards;
+}
+.h-right {
+    stroke-dasharray: 80;
+    stroke-dashoffset: -80;
+    animation: path 0.4s ease 1.3s forwards;    
+}
+
+/* M1 */
+.m1-bottom {
+    stroke-dasharray: 70;
+    stroke-dashoffset: -70;
+    animation: path 0.4s ease 0.9s forwards;
+}
+.m1-left {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: path 0.4s ease 1.3s forwards;    
+}
+.m1-right {
+    stroke-dasharray: 80;
+    stroke-dashoffset: -80;
+    animation: path 0.4s ease 0.5s forwards;
+}
